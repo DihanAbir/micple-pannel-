@@ -1,0 +1,53 @@
+.UserCommentInput {
+  padding: 10px;
+  border-top: 1px solid #e4e4e4;
+  display: flex;
+  align-items: center;
+  .wrapper {
+    margin-left: auto;
+    margin-right: 0;
+    width: fit-content;
+    position: relative;
+    .commentBtn {
+      border: 2px solid #d4d4d4;
+      height: 40px;
+      border-radius: 40px;
+      background: #ededed;
+      color: #7a7474;
+      padding: 0 15px;
+    }
+    .buttonWapper {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+    }
+    input {
+      outline: none;
+      width: 400px;
+      padding: 0 90px 0 16px;
+      border: 2px solid #d4d4d4;
+      height: 40px;
+      border-radius: 40px;
+      background: #ededed;
+    }
+  }
+  .add-gal {
+    position: relative;
+    flex: 1;
+    img {
+      height: 100%;
+      max-height: 100px;
+      width: auto;
+      max-width: 100%;
+    }
+    button {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

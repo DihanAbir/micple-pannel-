@@ -1,0 +1,9 @@
+export const CLOSE_MAIL_COMPOSE = 'CLOSE_MAIL_COMPOSE';
+export const OPEN_MAIL_COMPOSE = 'OPEN_MAIL_COMPOSE';
+export const UPDATE_COUNTS = 'UPDATE_COUNTS';
+export const FETCH_COUNTS = 'FETCH_COUNTS';
+export const PUSH_COUNTS = 'PUSH_COUNTS';
+export const PULL_COUNTS = 'PULL_COUNTS';
+
+export const RECEIVED_ALERM = 'RECEIVED_ALERM';
+export const SENT_ALERM = 'SENT_ALERM';

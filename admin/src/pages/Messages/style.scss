@@ -1,0 +1,104 @@
+.chats {
+  position: relative;
+  .header {
+    box-shadow: 2px 0 5px 0 #000;
+    .MuiTabs-root {
+      min-height: 30px;
+      .MuiTab-root {
+        flex: 1;
+        font-size: 12px;
+        min-height: 30px;
+        max-width: 100%;
+      }
+      .MuiTab-textColorPrimary.Mui-selected {
+        font-weight: bold;
+      }
+    }
+    .tabs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      & > div.dbdt {
+        .MuiFormControl-root {
+          width: 50%;
+        }
+      }
+      & > div {
+        flex: 3;
+        margin: 5px;
+        input {
+          width: 100%;
+          // padding: 5px 10px;
+          // border: 1px solid #ccc;
+          // &:hover,
+          // &:focus {
+          //   outline: 0;
+          //   border: 1px solid #bbb;
+          // }
+        }
+        .MuiFormControl-root {
+          width: 100%;
+        }
+      }
+      & > button {
+        flex: 1;
+        margin: 5px;
+      }
+    }
+  }
+  .YhdbS {
+    overflow-y: auto;
+    position: relative;
+    &::-webkit-scrollbar-track {
+      border-radius: 20px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 20px;
+      background-color: #008d07;
+    }
+    .notfound {
+      height: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .msg-list {
+      list-style-type: none;
+      li {
+        display: flex;
+        padding: 5px 10px;
+        align-items: center;
+        border: 1px solid #bbb;
+        margin: 10px;
+        .lstm {
+          color: green;
+          cursor: pointer;
+          span {
+            img {
+              width: 12px !important;
+            }
+          }
+        }
+      }
+    }
+    .pgntn {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        border-bottom: 0;
+      }
+    }
+  }
+  .cbrcnt {
+    position: fixed;
+    bottom: 0;
+  }
+}

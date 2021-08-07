@@ -1,0 +1,33 @@
+.UserContent {
+  max-height: max-content;
+  margin-bottom: 20px;
+  .MuiToolbar-regular {
+    max-height: 40px !important;
+  }
+}
+.coveOptionsBtns {
+  display: flex;
+  align-items: center;
+  & > * {
+    display: flex !important;
+    margin: 0 5px !important;
+  }
+}
+.MuiTypography-h6 {
+  font-size: 16px !important;
+}
+
+// @media only screen and (max-width: 600px) {
+// }
+// @media only screen and (max-width: 768px) {
+// }
+// @media only screen and (min-width: 600px) {
+// }
+// @media only screen and (min-width: 768px) {
+// }
+// @media only screen and (min-width: 992px) {
+// }
+// @media only screen and (min-width: 1200px) {
+// }
+// @media only screen and (min-width: 1366px) {
+// }

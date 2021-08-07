@@ -1,0 +1,92 @@
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+  h1 {
+    font-size: 20px;
+    color: #e2e2e2;
+  }
+}
+.usrbd {
+  background-color: #dff6ff;
+  height: -webkit-fill-available;
+  padding: 5px;
+  overflow: hidden auto;
+  min-height: 100vh;
+  &::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #008d07;
+  }
+  .main {
+    .form {
+      width: 95%;
+      margin: 0 auto;
+      border: 1px solid #0003;
+    }
+  }
+  .inusr {
+    display: flex;
+    padding: 5px 10px;
+    border: 1px solid #bbb;
+    margin: 10px;
+    & > div {
+      display: flex;
+      align-items: center;
+      img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+      }
+    }
+    .profile {
+      flex: 1 1 auto;
+      .inf {
+        margin-left: 10px;
+        h3 {
+          font-size: 17px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      .MuiInputBase-root {
+        max-width: 100px;
+      }
+      button {
+        margin: 0 2px;
+      }
+    }
+  }
+  .dvct {
+    color: #308330;
+    font-size: 15px;
+    width: 100%;
+    max-width: 690px;
+    margin: 20px auto 5px;
+  }
+}
+.MuiCard-root {
+  width: 90%;
+  max-width: 690px;
+  margin: 10px auto;
+}
+input {
+  font-size: 14px !important;
+}
+.MuiFilledInput-root {
+  background-color: transparent !important;
+}

@@ -1,0 +1,87 @@
+@import "./assets/fonts/OpenSans-Regular.ttf";
+@import "./assets/fonts/OpenSans-Bold.ttf";
+@import "./assets/fonts/Roboto-Regular.ttf";
+@import "./assets/fonts/Roboto-Bold.ttf";
+* {
+  box-sizing: border-box;
+  &:focus {
+    outline: 0;
+  }
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #008d07;
+  }
+}
+html,
+body {
+  font: {
+    family: "Open Sans", "Roboto", sans-serif; // 400, 700
+    size: 14px;
+    weight: 400;
+  }
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eee;
+}
+code {
+  font-family: monospace;
+}
+a {
+  transition: all 0.3s;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+img,
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  &:focus,
+  &:hover {
+    outline: 0;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+svg {
+  font-size: 18px !important;
+}
+input.fileInput {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: -999;
+  opacity: 0;
+}
+.MuiMenu-list {
+  padding: 0 !important;
+}

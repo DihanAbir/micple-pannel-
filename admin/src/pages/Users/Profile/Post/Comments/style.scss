@@ -1,0 +1,58 @@
+.Comments {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6px 15px;
+  border-top: 1px solid #d2d2d2;
+  .profileBox {
+    flex: 0 0 38px;
+    max-width: 38px;
+    height: 38px;
+    margin-right: 5px;
+    .avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  .edited {
+    font-size: 10px;
+    margin-right: 10px;
+    color: #666;
+  }
+  .commentBox {
+    flex: 1 1 auto;
+    .commentWrapper {
+      background-color: #f2f3f5;
+      width: fit-content;
+      border-radius: 18px;
+      padding: 5px 10px;
+      position: relative;
+      .comment {
+        font-size: 14px;
+        margin: 0;
+        color: #1c1e21;
+        .user {
+          font-weight: 700;
+          color: #385898;
+          cursor: pointer;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      img.p {
+        margin-top: 10px;
+        border-radius: 10px;
+        max-height: 200px;
+        border: 1px solid #9d9d9d;
+        box-shadow: 0 0 5px #000;
+      }
+      img.e {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.vdcnt {
+  margin: 40px;
+  position: relative;
+  button {
+    position: absolute;
+    top: -26px;
+    right: -26px;
+    z-index: 9;
+    svg {
+      font-size: 30px;
+    }
+  }
+}

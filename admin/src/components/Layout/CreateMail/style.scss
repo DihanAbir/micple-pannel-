@@ -1,0 +1,58 @@
+.cmpsb {
+  position: fixed;
+  bottom: 0;
+  left: 30%;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 300px;
+  box-shadow: 0 0 5px 0 #000000c4;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background-color: #fff;
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #cecece;
+    padding: 5px;
+    margin: 10px 0;
+    resize: none;
+    &:focus {
+      outline: 0;
+    }
+  }
+  textarea {
+    margin-bottom: 0;
+    height: 220px;
+    max-height: 80%;
+  }
+}
+.archs {
+  display: flex;
+  align-items: center;
+  span {
+    font-size: 20px;
+  }
+  svg {
+    height: 3rem;
+    width: 3rem;
+    color: rgb(0, 170, 34);
+  }
+  button svg {
+    color: #ff5c10;
+  }
+}
+.mbtns {
+  padding: 10px;
+  background-color: #e2e2e2;
+  display: flex;
+  align-items: center;
+  button {
+    margin: 0 5px;
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+}

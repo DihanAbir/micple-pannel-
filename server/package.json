@@ -1,0 +1,29 @@
+{
+  "name": "admin-server",
+  "description": "Search Engine with Communication and Freelancer Platform",
+  "version": "1.0.0",
+  "private": true,
+  "main": "panel.js",
+  "scripts": {
+    "dev": "nodemon panel.js",
+    "start": "node panel.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "data@95.217.16.84:~/micple/panel/server"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-multiparty": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-useragent": "^1.0.13",
+    "geoip-lite": "^1.4.0",
+    "socket.io": "^2.3.0"
+  },
+  "engines": {
+    "node": "12",
+    "npm": "6"
+  }
+}

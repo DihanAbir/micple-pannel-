@@ -1,0 +1,23 @@
+.notes-img-a1 {
+  width: 100% !important;
+  height: 135px;
+  border-radius: 8px;
+}
+.caption-tag-video-a4 {
+  height: 30px;
+  padding-left: 7px;
+  color: blue;
+  font-size: 15pt;
+}
+.caption-div-a6 {
+  height: 30px;
+  width: 160px;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+@media screen and(max-width:605px) {
+  .col1 {
+    height: 300px;
+  }
+}

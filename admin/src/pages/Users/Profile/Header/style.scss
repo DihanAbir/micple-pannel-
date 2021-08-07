@@ -1,0 +1,17 @@
+.h {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.ht {
+  margin: 0 auto !important;
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 5px;
+  }
+}
+@media (min-width: 600px) {
+  .MuiToolbar-regular {
+    min-height: 35px !important;
+  }
+}

@@ -1,0 +1,49 @@
+.top {
+  display: flex;
+  align-items: center;
+  .UserInfo {
+    padding: 15px;
+    flex: 1 1 auto;
+    .userProfile {
+      display: flex;
+      align-items: center;
+      .userImg {
+        border-radius: 100%;
+        width: 3em;
+        height: 3em;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+      .userInfo {
+        .userName {
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          small {
+            margin-left: 5px;
+            font-size: 12px;
+            color: #686868;
+          }
+        }
+        .timeAgo {
+          font-size: 12px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .opts {
+    padding: 22px;
+    position: relative;
+    .MuiIcon-root {
+      display: flex;
+      align-items: center;
+      width: 20px;
+      height: 25px;
+      cursor: pointer;
+      .MuiSvgIcon-root {
+        font-size: 20px;
+      }
+    }
+  }
+}
