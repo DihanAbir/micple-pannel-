@@ -1,0 +1,29 @@
+.adstable {
+  .MuiTable-root makeStyles-table-1 {
+  }
+  .tablecell {
+    border-right: 1px solid rgb(201, 209, 255);
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(56, 56, 56);
+  }
+
+  .tablecell:hover {
+    border-right: 1px solid rgb(195, 211, 255);
+    background-color: rgba(235, 235, 235, 0.74);
+  }
+  .tablecellHeader {
+    color: black;
+    font-weight: bold;
+    // border: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid white;
+    background-color: rgb(221, 236, 255);
+  }
+  .filter {
+    margin: 30px 0px;
+  }
+  .displaySpace {
+    display: flex;
+    justify-content: space-between;
+  }
+}
