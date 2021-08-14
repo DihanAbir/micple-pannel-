@@ -107,12 +107,12 @@ function Layout({
           <NavLink to='/mails'>
             <Indicator count={counts.mails.size}>Mail</Indicator>
           </NavLink>
-          <NavLink to='/monitoring'>Monitoring</NavLink>
+          {/* <NavLink to='/monitoring'>Monitoring</NavLink> */}
           <NavLink to='/sponsors'>Ads</NavLink>
           <NavLink to='/reports'>
             <Indicator count={counts.reports.size}>Reports</Indicator>
           </NavLink>
-          <NavLink to='/trash'>Recycle Bin</NavLink>
+          <NavLink to='/trash'>Bin</NavLink>
         </Nav>
       </Left>
       <Body>{children}</Body>

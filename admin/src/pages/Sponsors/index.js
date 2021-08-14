@@ -10,6 +10,7 @@ import {
   TableRow,
   TableSortLabel,
   Paper,
+  Button,
 } from "@material-ui/core";
 import { Route, withRouter } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
@@ -190,7 +191,7 @@ function Sponsors({ match: { url }, history: { push } }) {
                 padding: "10px",
                 fontWeight: 700,
                 fontSize: "14px",
-                backgroundColor: "#d6d8fd",
+                backgroundColor: "",
               }}
               item
               xs={1}
@@ -484,7 +485,7 @@ function Sponsors({ match: { url }, history: { push } }) {
                       selectedPost === row.PostID.$oid ? "#f1cc9f" : "white",
                   }}
                 >
-                  {row.Budget}
+                  ${row.Budget}
                 </p>
               ))}
             </Grid>
@@ -555,6 +556,254 @@ function Sponsors({ match: { url }, history: { push } }) {
                   </p>
                 </p>
               ))}
+            </Grid>
+          )}
+        </Grid>
+
+        <hr style={{ marginTop: "80px" }} />
+        <h1>Report</h1>
+        <br />
+        <br />
+        <br />
+        <div className="Header">
+          <Grid container>
+            <Grid
+              style={{
+                borderRight: "1px solid #7a8dea",
+                color: " black",
+                padding: "10px",
+                fontWeight: 700,
+                fontSize: "14px",
+                backgroundColor: "#d6d8fd",
+              }}
+              item
+              xs={2}
+            >
+              Reporter
+            </Grid>
+            <Grid
+              style={{
+                borderRight: "1px solid #7a8dea",
+                color: " black",
+                padding: "10px",
+                fontWeight: 700,
+                fontSize: "14px",
+                backgroundColor: "#d6d8fd",
+              }}
+              item
+              xs={2}
+            >
+              Claimer
+            </Grid>
+            <Grid
+              style={{
+                borderRight: "1px solid #7a8dea",
+                color: " black",
+                padding: "10px",
+                fontWeight: 700,
+                fontSize: "14px",
+                backgroundColor: "#d6d8fd",
+              }}
+              item
+              xs={3}
+            >
+              Post ID
+            </Grid>
+            <Grid
+              style={{
+                borderRight: "1px solid #7a8dea",
+                color: " black",
+                padding: "10px",
+                fontWeight: 700,
+                fontSize: "14px",
+                backgroundColor: "#d6d8fd",
+              }}
+              item
+              xs={2}
+            >
+              Reason
+            </Grid>
+            <Grid
+              style={{
+                borderRight: "1px solid #7a8dea",
+                color: " black",
+                padding: "10px",
+                fontWeight: 700,
+                fontSize: "14px",
+                backgroundColor: "#d6d8fd",
+              }}
+              item
+              xs={3}
+            >
+              Comments
+            </Grid>
+          </Grid>
+        </div>
+        <Grid container>
+          <Grid
+            style={{
+              height: "80vh",
+              overflow: "scroll",
+            }}
+            item
+            xs={2}
+          >
+            {rows.map((row) => (
+              <p
+                onClick={() => setSelectedItem(row.CountryName)}
+                style={{
+                  boxShadow: "inset -4px -2px 17px -6px rgba(204,205,234,0.52)",
+                  color: "black",
+                  padding: "10px",
+                  margin: "4px",
+                  fontSize: "12px",
+                  backgroundColor:
+                    selectedItem === row.CountryName
+                      ? "rgb(167, 190, 255)"
+                      : "white",
+                }}
+              >
+                {row.CountryName}({Math.floor(Math.random() * 10) + 1})
+              </p>
+            ))}
+          </Grid>
+          {/* 2nd item */}
+          {selectedItem === null ? (
+            ""
+          ) : (
+            <Grid
+              style={{
+                height: "80vh",
+                overflow: "scroll",
+                //
+              }}
+              item
+              xs={2}
+            >
+              {rows.map((row) => (
+                <p
+                  onClick={() => setSelectedUser(row.UserID)}
+                  style={{
+                    boxShadow:
+                      "inset -4px -2px 17px -6px rgba(204,205,234,0.52)",
+                    color: "black",
+                    padding: "10px",
+                    margin: "4px",
+                    fontSize: "12px",
+                    backgroundColor:
+                      selectedUser === row.UserID
+                        ? "rgb(167, 190, 255)"
+                        : "white",
+                  }}
+                >
+                  {row.User}
+                </p>
+              ))}
+            </Grid>
+          )}
+          {/* 3rd item */}
+          {selectedUser === null ? (
+            ""
+          ) : (
+            <Grid
+              style={{
+                height: "80vh",
+                overflow: "scroll",
+                //
+              }}
+              item
+              xs={3}
+            >
+              {rows.map((row) => (
+                <p
+                  onClick={() => setSelectedPost(row.PostID.$oid)}
+                  style={{
+                    boxShadow:
+                      "inset -4px -2px 17px -6px rgba(204,205,234,0.52)",
+                    color: "black",
+                    padding: "10px",
+                    margin: "4px",
+                    fontSize: "12px",
+                    backgroundColor:
+                      selectedPost === row.PostID.$oid
+                        ? "rgb(167, 190, 255)"
+                        : "white",
+                  }}
+                >
+                  {row.PostID.$oid}
+                </p>
+              ))}
+            </Grid>
+          )}
+          {/* 4th item */}
+          {selectedPost === null ? (
+            ""
+          ) : (
+            <Grid
+              style={{
+                height: "80vh",
+                overflow: "scroll",
+                //
+              }}
+              item
+              xs={2}
+            >
+              {rows.map((row) => (
+                <p
+                  style={{
+                    boxShadow:
+                      "inset -4px -2px 17px -6px rgba(204,205,234,0.52)",
+                    color: "black",
+                    padding: "10px",
+                    margin: "4px",
+                    fontSize: "12px",
+                    backgroundColor:
+                      selectedPost === row.PostID.$oid ? "#f1cc9f" : "white",
+                  }}
+                >
+                  {row.Date}
+                </p>
+              ))}
+            </Grid>
+          )}
+          {/* 5th item */}
+          {selectedPost === null ? (
+            ""
+          ) : (
+            <Grid item xs={3}>
+              <div
+                style={{
+                  height: "60vh",
+                  overflow: "scroll",
+                  //
+                }}
+              >
+                {rows.map((row, index) => (
+                  <p
+                    style={{
+                      boxShadow:
+                        "inset -4px -2px 17px -6px rgba(204,205,234,0.52)",
+                      color: index % 2 === 0 ? "black" : "white",
+                      padding: "10px",
+                      margin: "4px",
+                      fontSize: "12px",
+                      backgroundColor: index % 2 === 0 ? "white" : "salmon",
+                      textAlign: index % 2 === 0 ? "end" : "start",
+                    }}
+                  >
+                    {row.User} |{row.User}|{row.User}|
+                    <hr />
+                  </p>
+                ))}
+              </div>
+
+              <div className=" text-center">
+                <textarea className="chatinput" type="textarea" /> <br />
+                <Button variant="contained" color="secondary">
+                  {" "}
+                  Replay
+                </Button>
+              </div>
             </Grid>
           )}
         </Grid>
